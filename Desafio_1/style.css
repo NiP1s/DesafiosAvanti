@@ -1,0 +1,915 @@
+/* style.css */
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background: #f8f9fa;
+}
+  
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.header .header-top{
+    position: fixed;
+    padding: 0%;
+    width: 100%;
+    background-color: #005CFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.375rem;
+}
+
+.header .header-top p{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.375rem;
+  margin: 0rem;
+}
+
+.header .header-top .preco{
+  background-color: #6220C1;
+  color: #FFFFFF;
+  padding: 1px 3px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.header .header-top .desconto10{
+  font-style: italic;
+  font-weight: 400;
+}
+
+.header .header-home .home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-top: 2.5rem;
+}
+
+.client-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 10.269375rem;
+  height: 1.75rem;
+  gap: 1.5rem;
+}
+
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1.75rem;
+  width: 7.223125rem;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.48rem;
+}
+
+.client-icon {
+  width: 1.285625rem;
+  height: 1.5rem;
+}
+
+.hellow-client p , .hellow-client span{
+  font-size: 0.875rem;
+  margin: 0%;
+  font-weight: 600;
+  line-height: 0.875rem;
+}
+
+.hellow-client{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1.75rem;
+}
+
+.client-cart{
+  width: 1.54625rem;
+  height: 1.5rem;
+}
+  
+.logo {
+  width: 9.53625rem;
+  height: 1.6925rem;
+}
+
+.header .header-home .search-bar {
+  position: relative;
+  width: 37.125rem;
+  height: 2.5rem;
+}
+
+.header .header-home .search-bar input {
+  width: 100%;
+  padding: 8px 40px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.header .header-home .search-bar .btn-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 510px;
+  background-color: rgba(231, 231, 234, 1);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 5%;
+}
+.banner-img {
+  background-image: url("img/cadeira.jpg"); /* Substitua com seu caminho */
+  background-size: 80%; /* efeito de zoom */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 42.8125rem;
+}
+
+.banner-text {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-top: 10rem;
+}
+
+.banner-text h1 {
+  font-size: 6.25rem;
+  line-height: 100%;
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.banner-text h1 .bold {
+  font-weight: 700;
+}
+
+.banner-text h1 .thin {
+  font-weight: 300;
+}
+
+.banner-text p {
+  font-size: 1.5625rem;
+  color: #1F5EFF;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+  letter-spacing: 0.3rem;
+  line-height: 100%;
+}
+
+.banner-text .desconto {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #1F5EFF;
+  margin: 0.5rem 0 0 0;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.produtos .produto {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 180px;
+}
+
+.first-banner{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 73.5625rem;
+  height: 46.6875rem;
+  margin: 3% auto;
+}
+
+.first-banner .banner-img{
+  height: 100%;
+  width: 40.75rem;
+  background: rgba(194, 194, 194, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-banner .banner-img img{
+  width: 32.71125rem;
+  height: 33.010625rem;
+}
+
+.first-banner .text{
+  width: 30.4375rem;
+  height: 33.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 1.375rem;
+}
+
+.first-banner .text h3{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+}
+
+.first-banner .text p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05rem;
+}
+
+.segundo-banner{
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgba(222, 222, 222, 1);
+    width: 100%;
+    height: 51.1875rem;
+}
+
+.segundo-banner .banner2{
+  display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 73.5625rem;
+      height: 45.50875rem;
+      justify-content: center;
+}
+
+.segundo-banner .banner2 img{
+  max-width: 652px;
+    height: 100%;
+}
+
+.segundo-banner .banner2 .text{
+  display: flex;
+    width: 29.75rem;
+    height: 35.4375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+}
+
+.segundo-banner .banner2 .text h3{
+  font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 140%;
+    letter-spacing: 0.04rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.segundo-banner .banner2 .text div{
+  font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 140%;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.segundo-banner .banner2 .text div img{
+  width: 5.625rem;
+  height: 5.625rem;
+}
+
+.segundo-banner .banner2 .text div p{
+  font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 140%;
+    letter-spacing: 0.05rem;
+    margin: 0;
+    width: 22.5rem;
+    height: 7.8125rem;
+}
+
+.contato{
+  position: relative;
+  width: 100%;
+  height: 660px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.contato::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/banner_avanti.png') no-repeat center center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+}
+  
+
+.overlay-texto {
+    position: relative;
+    z-index: 2; /* para ficar acima da imagem */
+    background-color: rgba(0, 92, 255, 0.9);
+    padding: 20px;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.overlay-texto p{
+    font-size: 30px;
+    font-family: nunito;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0%;
+    line-height: 140%;
+}
+
+.produtos .produto img {
+  width: 100%;
+  height: auto;
+}
+
+.produtos .produto span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.resultado-busca {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem 0rem 1.333rem 0rem;
+  background-color: #fff;
+  font-size: 14px;
+  width: 78.6875rem;
+  height: 1.375rem;
+}
+  
+.navbar-menu .categorias {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar-menu .categorias span{
+  width: 100%;
+}
+  
+.menu-icon {
+  width: 0.875rem;
+  height: 0.625rem;
+  display: flex;
+  align-items: center;
+}
+
+.categorias .texto{
+  height: 1.375rem;
+  align-content: center;
+}
+
+.categorias .texto span{
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;  /* logo abaixo de "Todas as Categorias" */
+  left: 0;
+  width: 78.8125rem;
+  height: 20.5625rem;
+  background-color: #fff;
+  padding: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  gap: 30px;
+  z-index: 1000;
+}
+
+.categorias:hover .submenu {
+  display: flex;
+}
+
+.submenu .departamento-list {
+  width: 11.9175rem;
+  height: 18.625rem;
+  max-height: 18.625rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.submenu .departamento-list p{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin: 0%;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.submenu .departamento-list span{
+  display: flex;
+  justify-content: flex-end;
+  padding-inline-end: 0.625rem;
+}
+
+.submenu .departamento-list p:hover {
+  color: #005CFF;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.submenu .categoria-column {
+  display: flex;
+  width: 31.25rem;
+  justify-content: space-around;
+}
+
+.submenu .categoria-column div{
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu .categoria-column p{
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.submenu .categoria-column p:hover{
+  line-height: 100%;
+  font-weight: 700;
+  color: #005CFF;
+}
+
+.submenu .coluna-img{
+  width: 14.75rem;
+  height: 18.625rem;
+  position: relative;
+  overflow: hidden;
+  margin: 0rem 1.875rem 0rem 6.25rem;
+  border-radius: 0.625rem;
+}
+
+.submenu .coluna-img .gradiente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.74902) -20.45%, rgba(0, 0, 0, 0) 138.31%);
+  z-index: 1;
+}
+
+.submenu .coluna-img .banner{
+  border-radius: 0.625rem;
+}
+
+.submenu .coluna-img .text{
+  padding: 0%;
+  position: absolute;
+  color: #FFFFFF;
+  background-color: transparent;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 7.964375rem;
+  height: 12.944375rem;
+  z-index: 2
+}
+
+.submenu .coluna-img .text p{
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6875rem;
+  margin: 0%;
+  letter-spacing: -0.005em;
+}
+
+.submenu .coluna-img .text span{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.6875rem;
+  letter-spacing: 0;
+}
+
+.submenu .coluna-img .botao-transparente{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1.25rem;
+}
+
+.submenu .coluna-img .botao-transparente:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* leve efeito no hover */
+}
+
+.submenu .banner img {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.submenu .banner p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.submenu .banner button {
+  margin-top: 5px;
+  background-color: #005CFF;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.departamentos {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2.8125rem;
+  height: 1.375rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.departamentos p {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  margin: 0%;
+  line-height: 1.375rem;
+}
+
+.departamentos p:hover {
+  color: #005CFF;
+}
+
+.produto {
+  width: 180px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produto .card-body {
+  padding: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.badge-novo {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #005CFF;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+.preco-antigo {
+  text-decoration: line-through;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.desconto {
+  color: green;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #005CFF;
+  margin: 0.3rem 0;
+}
+
+.ver-mais {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #005CFF;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.carousel-indicators button {
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.newsletter{
+  width: 78.75rem;
+    height: 14.1875rem;
+    margin: 3% auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter .text{
+  width: 100%;
+    height: 3.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter .text p{
+  font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.newsletter .text span{
+  color: rgba(0, 92, 255, 1);
+}
+
+.newsletter .form{
+  display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 11rem;
+    justify-content: center;
+    align-items: center;
+    background: rgba(222, 222, 222, 1);
+}
+
+.newsletter .form form{
+  display: flex;
+    flex-wrap: nowrap;
+    width: 64.4375rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.newsletter .form .form-input{
+  width: 17.5rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: rgba(48, 48, 48, 1);
+    padding-left: 1.5625rem;
+}
+
+.newsletter .form .checkbox{
+  display: flex;
+    flex-wrap: nowrap;
+    width: 17.375rem;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.newsletter .form .checkbox p{
+  margin: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: rgba(101, 101, 101, 1);
+}
+
+.newsletter .form button{
+  width: 7.5625rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 92, 255, 1);
+    border-color: rgba(0, 92, 255, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+footer{
+  width: 100%;
+    height: 37.3125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top{
+  height: 24.125rem;
+    background-color: rgba(245, 245, 245, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-top .text{
+  width: 72.5rem;
+    height: 10.625rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.footer-top .text .logo{
+  width: 12.125rem;
+    height: 5.8125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-top .text .logo .avanti{
+  width: 9.5rem;
+  height: 1.6875rem;
+}
+
+.footer-top .text .content-1{
+  width: 11.625rem;
+  height: 8.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-top .text .content-2{
+  width: 10.8125rem;
+    height: 10.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-top .text .content-3{
+  width: 15.3125rem;
+    height: 9.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-top .text h4{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+
+}
+
+.footer-top .text h5{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0;
+
+}
+
+.footer-top .text .content-3 h5{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+
+.footer-top .text span{
+  font-weight: 400;
+}
+
+.footer-top .pagamentos{
+  width: 34.080625rem;
+    height: 1.5rem;
+}
+
+.footer-bottom{
+  height: 13.1875rem;
+  display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.footer-bottom .text{
+  width: 67.125rem;
+  height: 3.6875rem;
+}
+
+.footer-bottom .text p{
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(48, 48, 48, 1);
+}
+
+.footer-bottom .img{
+  width: 18.485rem;
+  height: 2rem;
+}

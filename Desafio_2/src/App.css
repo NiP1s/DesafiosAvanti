@@ -1,0 +1,80 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: black;
+  color: white;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.search-container {
+  display: flex;
+  margin: 1rem 0;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+  width: 300px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0 1rem;
+  background: #007bff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  background: #e0e0e0;
+  color: black;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-info h2 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.error-message {
+  background: #ddd;
+  color: red;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
