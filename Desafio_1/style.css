@@ -408,6 +408,8 @@ body {
   font-size: 14px;
   width: 78.6875rem;
   height: 1.375rem;
+  margin: 0 auto;
+  gap: 0.625rem
 }
   
 .navbar-menu .categorias {
@@ -475,6 +477,10 @@ body {
   margin: 0%;
   font-weight: 400;
   line-height: 100%;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 0rem;
+  color: rgba(48, 48, 48, 1);
 }
 
 .submenu .departamento-list span{
@@ -492,7 +498,7 @@ body {
 .submenu .categoria-column {
   display: flex;
   width: 31.25rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .submenu .categoria-column div{
@@ -503,6 +509,9 @@ body {
 .submenu .categoria-column p{
   line-height: 100%;
   font-weight: 400;
+  color: rgba(101, 101, 101, 1);
+  font-size: 0.875rem;
+  letter-spacing: 0rem;
 }
 
 .submenu .categoria-column p:hover{
@@ -606,9 +615,10 @@ body {
   height: 1.375rem;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.departamentos p {
+.departamentos .item {
   text-decoration: none;
   color: #000;
   font-weight: 400;
@@ -617,8 +627,27 @@ body {
   line-height: 1.375rem;
 }
 
-.departamentos p:hover {
+.departamento-item .text-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.departamento-item .text-column .name p{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0rem;
+}
+
+.departamento-item:hover .item{
   color: #005CFF;
+}
+
+.departamento-item:hover .submenu {
+  display: flex;
+  justify-content: space-between;
+  left: 44%;
+  transform: translateX(-50%);
 }
 
 .produto {
@@ -912,4 +941,178 @@ footer{
 .footer-bottom .img{
   width: 18.485rem;
   height: 2rem;
+}
+
+@media (max-width: 480px) {
+  /* HEADER */
+  .header-home {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .header .header-home .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .client {
+    display: none;
+  }
+
+  .client-cart{
+    display: block;
+  }
+
+  .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .categorias .texto,
+  .departamentos {
+    display: none;
+  }
+
+  .search-bar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .search-bar input {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: 10px 0 0 10px;
+    font-size: 1rem;
+  }
+
+  .btn-search {
+    border-radius: 0 10px 10px 0;
+    padding: 0 1rem;
+  }
+
+  /* NEWSLETTER */
+  .footer form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .footer input[type="text"],
+  .footer input[type="email"] {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .footer button {
+    background-color: #005CFF;
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer h5 {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .footer .social-icons,
+  .footer .payment-methods,
+  .footer .legal {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .footer .social-icons img,
+  .footer .payment-methods img {
+    width: 30px;
+    margin: 0 0.4rem;
+  }
+
+  .footer .legal img {
+    width: 60px;
+    margin: 0.3rem;
+  }
+
+  /* CARROSSEL */
+  .carousel-inner .carousel-item {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .carousel-item .card {
+    flex: 0 0 48%;
+    scroll-snap-align: start;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  /* BANNERS */
+  .first-banner,
+  .segundo-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .first-banner .banner-img,
+  .segundo-banner img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .first-banner .text,
+  .segundo-banner .text {
+    padding: 1rem;
+  }
 }
